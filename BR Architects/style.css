@@ -1,0 +1,508 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+body {
+    background-color: black;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 60px;
+    width: 100%;
+
+    padding: 20px;
+
+    color: white;
+}
+
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+
+.nav-bar h3 {
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+
+.nav-bar h3:hover {
+    background-color: gray;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    background-image: url("https://www.w3schools.com/w3images/architect.jpg");
+
+    background-position: center;
+    background-size: cover;
+
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 60px;
+}
+
+
+.title {
+    display: flex;
+    gap: 20px;
+
+    color: white;
+
+    align-items: center;
+}
+
+
+.title span {
+    letter-spacing: 5px;
+
+    font-weight: bold;
+
+    padding: 15px 20px;
+
+    background-color: rgba(0, 0, 0, 0.7);
+
+    font-size: 30px;
+}
+
+
+.title h1 {
+    font-size: 40px;
+
+    font-weight: normal;
+
+    letter-spacing: 5px;
+}
+
+
+/* =========================
+   PROJECTS
+========================= */
+
+.project {
+    color: white;
+
+    padding: 20px 32px;
+}
+
+
+.project-title {
+    font-size: 25px;
+
+    border-bottom: 1px solid #444;
+
+    padding-bottom: 20px;
+}
+
+
+/* PROJECT GRID */
+
+.card-container {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 16px;
+
+    margin-top: 40px;
+}
+
+
+/* PROJECT CARD */
+
+.card {
+    background-position: center;
+
+    background-size: cover;
+
+    height: 205px;
+
+    position: relative;
+}
+
+
+/* PROJECT IMAGES */
+
+.card1 {
+    background-image: url("https://www.w3schools.com/w3images/house5.jpg");
+}
+
+
+.card2 {
+    background-image: url("https://www.w3schools.com/w3images/house2.jpg");
+}
+
+
+.card3 {
+    background-image: url("https://www.w3schools.com/w3images/house3.jpg");
+}
+
+
+.card4 {
+    background-image: url("https://www.w3schools.com/w3images/house4.jpg");
+}
+
+
+.card5 {
+    background-image: url("https://www.w3schools.com/w3images/house2.jpg");
+}
+
+
+.card6 {
+    background-image: url("https://www.w3schools.com/w3images/house5.jpg");
+}
+
+
+.card7 {
+    background-image: url("https://www.w3schools.com/w3images/house4.jpg");
+}
+
+
+.card8 {
+    background-image: url("https://www.w3schools.com/w3images/house3.jpg");
+}
+
+
+/* PROJECT TITLE ON IMAGE */
+
+.topic {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    background-color: black;
+
+    color: white;
+}
+
+
+.topic h4 {
+    font-weight: normal;
+
+    font-size: 15px;
+
+    padding: 10px 16px;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about-sec {
+    margin-top: 50px;
+
+    font-size: 25px;
+
+    padding: 20px 32px;
+
+    color: white;
+}
+
+
+/* ABOUT HEADING */
+
+.about-sec > p {
+    padding-bottom: 20px;
+
+    border-bottom: 1px solid #444;
+}
+
+
+/* ABOUT DESCRIPTION */
+
+.about-main {
+    font-size: 16px;
+
+    font-weight: normal;
+
+    line-height: 1.5;
+
+    margin-top: 20px;
+}
+
+
+/* =========================
+   TEAM GRID
+========================= */
+
+.about-container {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 16px;
+
+    margin-top: 30px;
+}
+
+
+/* TEAM CARD */
+
+.person-card {
+    color: white;
+}
+
+
+/* =========================
+   TEAM IMAGES
+========================= */
+
+.person-card::before {
+    content: "";
+
+    display: block;
+
+    height: 207px;
+
+    background-position: center;
+
+    background-size: cover;
+
+    filter: grayscale(80%);
+}
+
+
+.person1::before {
+    background-image: url("https://www.w3schools.com/w3images/team2.jpg");
+}
+
+
+.person2::before {
+    background-image: url("https://www.w3schools.com/w3images/team1.jpg");
+}
+
+
+.person3::before {
+    background-image: url("https://www.w3schools.com/w3images/team3.jpg");
+}
+
+
+.person4::before {
+    background-image: url("https://www.w3schools.com/w3images/team4.jpg");
+}
+
+
+/* =========================
+   TEAM TEXT
+========================= */
+
+.person-card h2 {
+    font-size: 24px;
+
+    font-weight: normal;
+
+    margin-top: 15px;
+}
+
+
+.person-card .role {
+    color: #999;
+
+    margin-top: 20px;
+
+    font-size: 15px;
+}
+
+
+.person-card > p:not(.role) {
+    font-size: 15px;
+
+    line-height: 1.5;
+
+    margin-top: 20px;
+}
+
+
+/* =========================
+   CONTACT BUTTON
+========================= */
+
+.person-card button {
+    width: 100%;
+
+    border: none;
+
+    padding: 10px;
+
+    margin-top: 15px;
+
+    background-color: #222;
+
+    color: white;
+
+    font-size: 15px;
+
+    cursor: pointer;
+}
+
+
+.person-card button:hover {
+    background-color: #ccc;
+
+    color: black;
+}
+
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-sec {
+    color: white;
+    padding: 20px 32px;
+    margin-top: 50px;
+}
+
+
+/* CONTACT HEADING */
+
+.contact-title {
+    font-size: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #444;
+}
+
+
+/* DESCRIPTION */
+
+.contact-text {
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+
+/* FORM */
+
+.contact-sec form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+/* INPUTS */
+
+.contact-sec input {
+    width: 100%;
+    padding: 12px;
+
+    background-color: black;
+
+    border: 1px solid #555;
+
+    color: white;
+
+    font-size: 15px;
+}
+
+
+/* PLACEHOLDER */
+
+.contact-sec input::placeholder {
+    color: #999;
+}
+
+
+/* INPUT FOCUS */
+
+.contact-sec input:focus {
+    outline: none;
+    border-color: white;
+}
+
+
+/* SEND BUTTON */
+
+.contact-sec button {
+    width: 150px;
+
+    padding: 12px;
+
+    margin-top: 10px;
+
+    border: none;
+
+    background-color: #222;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+
+/* HOVER */
+
+.contact-sec button:hover {
+    background-color: #ccc;
+    color: black;
+}
+
+/* =========================
+   MAP
+========================= */
+
+.map {
+    margin: 40px 32px 0;
+
+    height: 500px;
+
+    background-image: url("https://www.w3schools.com/w3images/map.jpg");
+
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    height: 100px;
+
+    margin-top: 30px;
+
+    background-color: black;
+
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    font-size: 15px;
+}
+
+footer span {
+    text-decoration: underline;
+}
